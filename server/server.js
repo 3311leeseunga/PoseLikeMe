@@ -24,4 +24,40 @@ const con = mysql.createConnection({
 
 con.connect()
     
+
+app.get('/', (req,res) =>{
+   
+    con.query(
+        "select * from game_score order by score desc",
+        (err, rows, fields) => {
+            if(err){
+                console.log(err);
+                res.status(500).send('Internal Server Error')
+            }
+              res.send(rows);
+        }
+    )
+})
+
+
+
+app.post('/',(req,res)=> {
+   
+    let name = req.body.name;
+    let score = req.body.score;
+    let param = [name,score];
+
+    con.query(
+        "insert into game_score(name,score) values(?,?);",
+        param,
+        (err, rows, fields) => {
+            if(err){
+                console.log(err);
+                res.status(500).send('Internal Server Error')
+            }
+            console.log("save")
+        }
+    )
+})
+
 app.listen(port ,  ()=> console.log(`Listening on port ${port}`));

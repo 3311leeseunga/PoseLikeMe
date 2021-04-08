@@ -25,7 +25,7 @@ const con = mysql.createConnection({
 con.connect()
     
 
-app.get('/', (req,res) =>{
+app.get('/score', (req,res) =>{
    
     con.query(
         "select * from game_score order by score desc",
@@ -41,7 +41,7 @@ app.get('/', (req,res) =>{
 
 
 
-app.post('/',(req,res)=> {
+app.post('/score',(req,res)=> {
    
     let name = req.body.name;
     let score = req.body.score;

@@ -1,7 +1,10 @@
+@import url(//db.onlinewebfonts.com/c/24a91fee2c9ffd1cc9be710d2ed368b5?family=Sportypo);
+
 main {
     width: 100%;
     max-width: 100vw;
     height: 100vh;
+    font-family: 'Sportypo';
 }
 
 /* Main Container */
@@ -33,15 +36,13 @@ main {
 }
 
 .neon {
-  font-family: neon;
-  color: #FB4264;
+  color: #51fb42;
   font-size: 10vw;
   line-height: 2vw;
   text-shadow: 0 0 3vw #F40A35;
 }
 
 .flux {
-  font-family: neon;
   color: #426DFB;
   font-size: 4vw;
   line-height: 2vw;
@@ -49,9 +50,9 @@ main {
 }
 
 .neon {
-  animation: neon 1s ease infinite;
-  -moz-animation: neon 1s ease infinite;
-  -webkit-animation: neon 1s ease infinite;
+  animation: neon 2s ease infinite;
+  -moz-animation: neon 2s ease infinite;
+  -webkit-animation: neon 2s ease infinite;
 }
 
 @keyframes neon {
@@ -93,4 +94,19 @@ main {
   background-color: rgb(201, 90, 90);
   border: none;
   border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+  padding: 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  background: none;
+  border-bottom: 3px solid #1041FF;
+  margin: 20px;
+  font-size: 2vw;
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Game() {
+function GameFirstPage() {
   return (
     <div>
       {/* 사진 보여준 다음, 3초 뒤에 GameEnd */}
@@ -9,4 +9,4 @@ function Game() {
   )
 }
 
-export default Game
+export default GameFirstPage

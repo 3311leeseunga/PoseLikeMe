@@ -1,6 +1,6 @@
 import React from 'react'
 
-function GameEnd() {
+function GameLandingPage() {
   return (
     <div>
       {/*왼쪽에 웹캠, 오른쪽에 다음 포즈 사진 */}
@@ -9,4 +9,4 @@ function GameEnd() {
   )
 }
 
-export default GameEnd
+export default GameLandingPage

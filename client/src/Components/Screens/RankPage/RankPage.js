@@ -1,11 +1,11 @@
 import React from 'react'
 
-function HowToUsePage() {
+function RankPage() {
     return (
         <div>
-            How To Use
+            RankPage
         </div>
     )
 }
 
-export default HowToUsePage
+export default RankPage
